@@ -13,3 +13,13 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
+
+      # AWS credentials
+
+      # - name: install CLI
+      #     env:
+      #       CI: true
+      #     run: npm ci
+
+      - name: deploy
+        run: npm run deploy
